@@ -1,17 +1,17 @@
 import { flush, render } from '@stencil/core/testing';
-import { MyName } from './my-name';
+import { MyProfile } from './my-profile';
 
-describe('my-name', () => {
+describe('my-profile', () => {
   it('should build', () => {
-    expect(new MyName()).toBeTruthy();
+    expect(new MyProfile()).toBeTruthy();
   });
 
   describe('rendering', () => {
     let element;
     beforeEach(async () => {
       element = await render({
-        components: [MyName],
-        html: '<my-name></my-name>'
+        components: [MyProfile],
+        html: '<my-profile></my-profile>'
       });
     });
 
